@@ -1,13 +1,14 @@
-article-img{
+.article-img{
     display: block;
-    height: 128px;
+    height: 128px!important;
     width: 100%;
-    margin: 0 auto 8px;
- } 
+    margin: 0 auto 20px;
+} 
 /*Use article-img as the class for img under article section */
 
 /* Remember to put !important in front of your own applied style is the styles on any page is affecting your work... Please don't change amything here */
 
+<<<<<<< HEAD
 *{
   padding: 0;
   margin: 0;
@@ -212,3 +213,234 @@ footer {
   } 
 }
 
+=======
+.warning{
+    padding-top: 30px;
+}
+
+.warning-p{
+    border: 5px solid #fef7e0;
+    background: #fef7e0;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 120px;
+}
+
+img{
+    height: 50px !important;
+}
+
+.heart{
+    text-align: center;
+}
+
+.row{
+    text-align: center;
+    margin: 30px 50px;
+}
+
+
+
+h1, h2, h3, p{
+    text-align: center;
+    color: #3c4043 !important;
+}
+
+p{
+    font-weight: 500px;
+    font-size: 1rem;
+}
+
+.dropdown{
+    text-align: center;
+    border: #202124;
+    height: auto;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.heart-div{
+    text-align: center;
+}
+
+.h1-support{
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 4rem;
+    padding: 30px 60px 0 60px;
+    color: #202124;
+}
+
+
+.h2-support{
+    font-size: 2.0rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 4rem;
+    padding: 50px 60px 50px 60px;
+}
+
+.show{
+    background: none;
+    border: 0;
+    display: inline-block;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    letter-spacing: .01785714em;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #5f6368;
+    cursor: pointer;
+    margin: 12px auto 0;
+    min-height: 48px;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+
+.convo{
+    letter-spacing: .00625em;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #202124;
+}
+
+.english{
+    font-weight: 500 !important;
+    color: #202124 !important;
+    border: 1px solid grey !important;
+
+}
+
+.dropdown{
+    margin-bottom: 50px;
+}
+
+.unlock{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container-fluid{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5% 7%;
+}
+
+.heading{
+    text-align: center;
+    line-height: 1.5;
+    color: #3c4043;
+    margin: 0 0 40px;
+}
+.popular_article{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3%;
+}
+
+.feature{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 912px;
+
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    overflow: visible;
+    margin:0 auto 48px;
+}
+
+.article_box{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    padding: 3%;
+    text-align: center;
+    margin: 3%;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15);
+    border-radius: 8px;
+
+}
+
+.help{
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 5%;
+    cursor: pointer;
+    color: rgb(41,98,255);
+}
+
+.membership{
+    margin-bottom: 48px;
+}
+
+.description{
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #5f6368;
+    letter-spacing: 0.01428rem;
+    margin-bottom: 48px;
+}
+
+.btn{
+    padding: 8px 24px;
+}
+
+.footer{
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px){
+    .one{
+        position: relative !important; 
+        left: 45px !important;
+    }
+    
+    .two{
+        position: relative !important; 
+        right: 50px !important;
+    }
+   
+}
+@media only screen and (max-width: 768px){
+    .h1-support{
+    font-size: 2.5rem;
+    }
+
+    .h2-support{
+        font-size: 2.0rem;
+    }
+
+    .article_box{
+        display: block;
+        margin: 20px auto!important;
+        
+    }
+}
+
+@media screen and (max-width: 512px){
+    .feature{
+        flex-direction: column;
+        overflow: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .footer{
+        display: none;
+    }
+}
+>>>>>>> 728259090651891d50fbd1ff3e59b6318095a80e
