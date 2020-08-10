@@ -1,1 +1,126 @@
-/* Remember to put !important in front of your own applied style is the styles on any page is affecting your work... Please don't change amything here */
+/* Remember to put !important in front of your own applied style is the styles on any page is affecting your work... Please don't change anything here */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  padding: 0 5em;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*********** collapse container **********/
+
+.collapse {
+  width: 100%;
+  position: relative;
+}
+
+.collapse.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/********** collapse header ************/
+
+.collapse__header {
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapse__header:active {
+  background-color: #f5f5f5;
+}
+
+.collapse.open .collapse__header {
+  background-color: #f5f5f5;
+}
+
+.collapse:not(.open) .collapse__header {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.collapse__header-icon {
+  margin-right: 5px;
+  color: #0984e3;
+}
+
+.collapse__header-title {
+  font-weight: bold;
+}
+
+.collapse__header-close_btn {
+  color: rgb(109, 109, 109);
+}
+
+/*********** collapse content *********/
+
+.collapse__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+  padding: 24px 24px 24px 32px;
+  background-color: #fff;
+}
+
+.collapse.open .collapse__content {
+  display: inherit;
+}
+
+.collapse__content > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse__content > div:not(:last-of-type) {
+  margin-bottom: 1.5em;
+}
+
+/********** switch ***********/
+
+.switch {
+  position: relative;
+  height: 1em;
+  width: 2.4em;
+  background-color: #9f9f9f;
+  border-radius: 20px;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/********** misc *********/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome, Edge, Opera and Firefox */
+}
