@@ -8,7 +8,6 @@
 
 /* Remember to put !important in front of your own applied style is the styles on any page is affecting your work... Please don't change amything here */
 
-<<<<<<< HEAD
 *{
   padding: 0;
   margin: 0;
@@ -213,7 +212,6 @@ footer {
   } 
 }
 
-=======
 .warning{
     padding-top: 30px;
 }
@@ -443,4 +441,3 @@ h2{
         display: none;
     }
 }
->>>>>>> 728259090651891d50fbd1ff3e59b6318095a80e
